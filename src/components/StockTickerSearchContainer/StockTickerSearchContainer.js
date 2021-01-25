@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import StockTickerInput from '../../components/StockTickerInput/StockTickerInput';
+import StockTickerInput from '../StockTickerInput/StockTickerInput';
 
 function StockTickerSearchContainer() {
   const [inputValue, setInputValue] = useState('');
