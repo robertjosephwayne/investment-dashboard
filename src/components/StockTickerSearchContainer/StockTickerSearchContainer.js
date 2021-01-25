@@ -1,7 +1,10 @@
 import { useState } from 'react';
-import StockTickerInput from '../StockTickerInput/StockTickerInput';
+import { connect } from 'react-redux';
+import * as StockTickerActions from '../../redux/StockTicker/StockTicker.actions';
+import StockTickerSearchButton from '../StockTickerSearchButton/StockTickerSearchButton';
+import StockTickerSearchInput from '../StockTickerSearchInput/StockTickerSearchInput';
 
-function StockTickerSearchContainer() {
+function StockTickerSearchContainer({ fetchStockPrices }) {
   const [inputValue, setInputValue] = useState('');
 
   const handleChange = ({ target }) => {
@@ -9,18 +12,22 @@ function StockTickerSearchContainer() {
   };
 
   const handleSubmit = () => {
-    console.log(inputValue);
+    fetchStockPrices(inputValue);
   };
 
   return (
     <>
-      <StockTickerInput
-        onChange={handleChange}
-        onSubmit={handleSubmit}
-        inputValue={inputValue}
-      />
+      <StockTickerSearchInput onChange={handleChange} inputValue={inputValue} />
+      <StockTickerSearchButton onSubmit={handleSubmit} />
     </>
   );
 }
 
-export default StockTickerSearchContainer;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchStockPrices: (stockTicker) =>
+      dispatch(StockTickerActions.fetchStockPrices(stockTicker)),
+  };
+};
+
+export default connect(null, mapDispatchToProps)(StockTickerSearchContainer);
