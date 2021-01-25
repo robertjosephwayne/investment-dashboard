@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/investment-dashboard/static/css/main.6e7e9c8a.chunk.css",
+    "main.js": "/investment-dashboard/static/js/main.12faaaf4.chunk.js",
+    "main.js.map": "/investment-dashboard/static/js/main.12faaaf4.chunk.js.map",
+    "runtime-main.js": "/investment-dashboard/static/js/runtime-main.0b8767c7.js",
+    "runtime-main.js.map": "/investment-dashboard/static/js/runtime-main.0b8767c7.js.map",
+    "static/js/2.933e88a9.chunk.js": "/investment-dashboard/static/js/2.933e88a9.chunk.js",
+    "static/js/2.933e88a9.chunk.js.map": "/investment-dashboard/static/js/2.933e88a9.chunk.js.map",
+    "static/js/3.1248e4df.chunk.js": "/investment-dashboard/static/js/3.1248e4df.chunk.js",
+    "static/js/3.1248e4df.chunk.js.map": "/investment-dashboard/static/js/3.1248e4df.chunk.js.map",
+    "index.html": "/investment-dashboard/index.html",
+    "static/css/main.6e7e9c8a.chunk.css.map": "/investment-dashboard/static/css/main.6e7e9c8a.chunk.css.map",
+    "static/js/2.933e88a9.chunk.js.LICENSE.txt": "/investment-dashboard/static/js/2.933e88a9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0b8767c7.js",
+    "static/js/2.933e88a9.chunk.js",
+    "static/css/main.6e7e9c8a.chunk.css",
+    "static/js/main.12faaaf4.chunk.js"
+  ]
+}
