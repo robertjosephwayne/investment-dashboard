@@ -1,13 +1,15 @@
+import StockPricesTableContainer from './components/StockPricesTableContainer/StockPricesTableContainer';
+import StockTickerSearchContainer from './components/StockTickerSearchContainer/StockTickerSearchContainer';
 import TopAppBar from './components/TopAppBar/TopAppBar';
-import StockTickerSearchContainer from './containers/StockTickerSearchContainer/StockTickerSearchContainer';
 
 function App() {
   return (
     <div>
       <TopAppBar title="Investment Dashboard"></TopAppBar>
-      <div className="flex justify-center mt-6">
+      <div>
         <StockTickerSearchContainer />
       </div>
+      <StockPricesTableContainer />
     </div>
   );
 }
